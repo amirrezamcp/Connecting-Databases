@@ -6,6 +6,6 @@ class Update extends Database {
         $stmt = $this->connection->prepare($sql);
         $stmt->execute([':id' => $id, ':value' => $value]);
         $result = $stmt->rowCount();
-        return $result;
+        return $result; 
     }
 }
